@@ -1,0 +1,21 @@
+{
+    "name": "alisonbnt/hikaru-container",
+    "description": "A simple and PSR-11 focused dependency injection container",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alison Bento",
+            "email": "alisonbnt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "psr/container": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlisonBnt\\Hikaru\\": "src/"
+        }
+    }
+}
