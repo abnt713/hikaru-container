@@ -50,4 +50,12 @@ class ContainerTest extends TestCase
         $this->expectException(EntryNotFoundException::class);
         $this->container->get('Zulu');
     }
+
+    public function testHasBehavior()
+    {
+        $this->assertTrue($this->container->has('Alpha'));
+        $this->assertTrue($this->container->has('Bravo'));
+        $this->assertTrue($this->container->has('Charlie'));
+        $this->assertFalse($this->container->has('Delta'));
+    }
 }

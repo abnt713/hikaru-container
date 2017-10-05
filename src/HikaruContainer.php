@@ -30,6 +30,6 @@ class HikaruContainer implements ContainerInterface
 
     public function has($id)
     {
-        return isset($this->entries[$id]);
+        return array_key_exists($id, $this->entries);
     }
 }
